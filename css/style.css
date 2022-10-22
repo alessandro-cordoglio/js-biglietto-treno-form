@@ -1,0 +1,21 @@
+/* STRUTTURA */
+body{
+    background-color:#B91450 ;
+}
+
+
+/* DOC STYLE */
+/* div contenente le info dell'utente */
+.my_container{
+    max-width: 1500px;
+    margin: auto;
+    overflow: auto;
+}
+.user_info{
+    background-color: white;
+    padding: 10px;
+}
+/* div contenente il biglietto */
+.traveler_info{
+    background-color: gray;
+}

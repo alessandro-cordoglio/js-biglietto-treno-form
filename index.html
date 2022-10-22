@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ticket Train</title>
+</head>
+<body>
+    <main class="my_container">
+        <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="user_info rounded">
+            <form action="">
+                <div>
+                    <div>
+                        <label for="user_name">Nome Cognome</label>
+                        <input type="text" name="user_name" id="user_name" value="">
+                    </div>
+                    <div>
+                        <label for="journey_km">Km da percorrere</label>
+                        <input type="number" min="0" name="journey_km" id="journey_km" value="">
+                    </div>
+                    <div>
+                        <label for="age">Fascia d'età</label>
+                        <select name="age" id="user_age">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="anziano">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <input type="button" id="ticket_gen" value="Genera">
+                    <input type="reset" value="Annulla">
+                </div>
+            </form>
+        </div>
+        <h1 class="mt-4 text-center">IL TUO BIGLIETTO</h1>
+        <div class="bg-white p-4">
+            <div class="row border-top border-bottom">
+                <div class="col traveler_info py-3 px-3"> 
+                    <h3 class="fs-4 fw-bold"> NOME PASSEGGERO</h3>
+                    <span id="traveler_name" class="fw-bold fs-5">prova</span>
+                </div>
+                <div class="row col-10 py-3">
+                    <div class="col">
+                        <h3 class="fs-5 fw-bold mb-5">Offerta</h3>
+                        <span id="discount">prova</span>
+                    </div>
+                    <div class="col">
+                        <h3 class="fs-5 fw-bold mb-5">Carrozza</h3>
+                        <span id="carriage">prova</span>
+                    </div>
+                    <div class="col">
+                        <h3 class="fs-5 fw-bold mb-5">Codice CP</h3>
+                        <span id="cp_code">prova</span>
+                    </div>
+                    <div class="col">
+                        <h3 class="fs-5 fw-bold mb-5">Costo biglietto</h3>
+                        <span id="ticket_price">prova</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
