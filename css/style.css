@@ -2,7 +2,12 @@
 body{
     background-color:#B91450 ;
 }
-
+.hidden__{
+    display: none;
+}
+.show__{
+    display: block;
+}
 
 /* DOC STYLE */
 /* div contenente le info dell'utente */
