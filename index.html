@@ -16,11 +16,11 @@
                 <div>
                     <div>
                         <label for="user_name">Nome Cognome</label>
-                        <input type="text" name="user_name" id="user_name" value="">
+                        <input onkeyup="success()" type="text" name="user_name" id="user_n" value="">
                     </div>
                     <div>
                         <label for="journey_km">Km da percorrere</label>
-                        <input type="number" min="0" name="journey_km" id="journey_km" value="">
+                        <input onkeyup="success()" type="number" min="0" name="journey_km" id="journey_km" value="">
                     </div>
                     <div>
                         <label for="age">Fascia d'età</label>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div>
-                    <input type="button" id="ticket_gen" value="Genera">
+                    <input disabled type="button" id="ticket_gen" value="Genera">
                     <input type="button" onclick="window.location.reload();" value="Annulla">
                 </div>
             </form>
@@ -44,7 +44,7 @@
                         <h3 class="fs-4 fw-bold"> NOME PASSEGGERO</h3>
                         <span id="traveler_name" class="fw-bold fs-5">prova</span>
                     </div>
-                    <div class="row col-10 py-3">
+                    <div class="row col-9 py-3">
                         <div class="col">
                             <h3 class="fs-5 fw-bold mb-5">Offerta</h3>
                             <span id="discount">prova</span>
