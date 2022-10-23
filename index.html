@@ -10,28 +10,40 @@
 </head>
 <body>
     <main class="my_container">
-        <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="user_info rounded">
-            <form action="">
-                <div>
-                    <div>
-                        <label for="user_name">Nome Cognome</label>
-                        <input onkeyup="success()" type="text" name="user_name" id="user_n" >
+        <h1 class="text-center text-white mb-4 fw-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="user_info">
+            <form action="#">
+                <div class="form_style d-flex align-items-center justify-content-between">
+                    <div class="form_label">
+                        <div class="text-center mb-2">
+                            <label for="user_name">Nome Cognome</label>
+                        </div>
+                        <div class="form_input">
+                            <input onkeyup="success()" type="text" name="user_name" id="user_n" >
+                        </div>
                     </div>
-                    <div>
-                        <label for="journey_km">Km da percorrere</label>
-                        <input onkeyup="success()" type="number" min="0" name="journey_km" id="km">
+                    <div class="form_label">
+                        <div class="text-center mb-2">
+                            <label for="journey_km">Km da percorrere</label>
+                        </div>
+                        <div class="form_input">
+                            <input onkeyup="success()" type="number" min="0" name="journey_km" id="km">
+                        </div>
                     </div>
-                    <div>
-                        <label for="age">Fascia d'età</label>
-                        <select name="age" id="user_age">
-                            <option value="adult">Maggiorenne</option>
-                            <option value="minor">Minorenne</option>
-                            <option value="old">Over 65</option>
-                        </select>
+                    <div class="form_label">
+                        <div class="text-center mb-2">
+                            <label for="age">Fascia d'età</label>
+                        </div>
+                        <div class="form_input">
+                            <select name="age" id="user_age">
+                                <option value="adult">Maggiorenne</option>
+                                <option value="minor">Minorenne</option>
+                                <option value="old">Over 65</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="text-center mt-5">
                     <input disabled type="button" id="ticket_gen" value="Genera">
                     <input type="button" onclick="window.location.reload();" value="Annulla">
                 </div>

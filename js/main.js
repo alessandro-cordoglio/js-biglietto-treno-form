@@ -10,6 +10,15 @@ const age_value = age.value
 
 let ticket_price = 0.21*journey_km;
 
+/* funziona che controlla che tutti gli elementi di input siano riempiti */
+function success() {
+    if(document.getElementById("user_n").value==="" || document.getElementById("km").value==="") { 
+           document.getElementById('ticket_gen').disabled = true; 
+       } else { 
+           document.getElementById('ticket_gen').disabled = false;
+       }
+   }
+   
 /* funzione per lo sconto */
 if(age_value=="adult"){
     document.getElementById("discount").innerHTML= `Biglietto Standard`
@@ -28,14 +37,7 @@ btn_ticket.addEventListener('click', function(){
     hidden_div.classList.replace("hidden__", "show__")
 });
 
-/* funziona che controlla che tutti gli elementi di input siano riempiti */
-function success() {
-    if(document.getElementById("user_n").value==="" || document.getElementById("km").value==="") { 
-           document.getElementById('ticket_gen').disabled = true; 
-       } else { 
-           document.getElementById('ticket_gen').disabled = false;
-       }
-   }
+
 
 
 document.getElementById("traveler_name").innerHTML= user_name 
